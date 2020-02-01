@@ -1,6 +1,8 @@
 import {LOBBIES_FETCHED, LOBBIES_LOADING, STOP_LOBBIES_LOADING} from "./types";
 
-const corsProxy = "https://cors-anywhere.herokuapp.com/";
+const corsProxy = async (url:string) => {
+    return await fetch(`https://pascalraszyk.de/cors.php`);
+};
 
 export const fetchLobbies = () => {
     return async (dispatch:Function) => {
@@ -8,7 +10,7 @@ export const fetchLobbies = () => {
             type: LOBBIES_LOADING,
             payload: null
         });
-        const req = await fetch(`${corsProxy}https://aoe2.net/api/lobbies?game=aoe2de`);
+        const req = await corsProxy(`https://aoe2.net/api/lobbies?game=aoe2de&qs=${+new Date()}`);
         const data = await req.json();
 
         dispatch({
