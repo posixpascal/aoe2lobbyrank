@@ -1,34 +1,20 @@
 {
-  "name": "aoe-lobbyrank",
-  "version": "0.1.0",
+  "name": "aoe2lobby",
+  "version": "1.0.0",
+  "description": "Workaround for missing ELO ranking in AOE2DE lobbies.",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.1"
-  },
+  "repository": "https://github.com/posixpascal/aoe2lobby",
+  "author": "Pascal Raszyk <pascal@raszyk.de>",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build:server": "yarn workspace @aoe2lobby/server build",
+    "start:server": "yarn run build:server && yarn workspace @aoe2lobby/server start:prod"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+  "workspaces": {
+    "packages": [
+      "packages/*"
     ]
+  },
+  "dependencies": {
   }
 }
