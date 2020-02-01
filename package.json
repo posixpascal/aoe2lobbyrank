@@ -7,6 +7,7 @@
   "author": "Pascal Raszyk <pascal@raszyk.de>",
   "license": "MIT",
   "scripts": {
+    "build": "yarn workspace @aoe2lobby/web build",
     "build:server": "yarn workspace @aoe2lobby/server build",
     "start:server": "yarn run build:server && yarn workspace @aoe2lobby/server start:prod"
   },
