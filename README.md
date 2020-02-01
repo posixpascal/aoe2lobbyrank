@@ -8,13 +8,22 @@ This helps you to balance teams as well as keeping the game more entertaining by
 LobbyRank visualises the current ranking, wins, losses, average lobby rating, country, drops, streaks and more.
 
 ## Screenshots
+Main Page
+![Main Page](https://raw.githubusercontent.com/posixpascal/aoe2lobbyrank/master/screenshots/screen_1.png)
+
+Lobby View
+![Main Page](https://raw.githubusercontent.com/posixpascal/aoe2lobbyrank/master/screenshots/screen_2.png)
+
+Another Lobby View
+![Main Page](https://raw.githubusercontent.com/posixpascal/aoe2lobbyrank/master/screenshots/screen_3.png)
 
 ## Building
-
+tbd.
 ## Installation
-
+tbd.
 ## Contributing
-
+tbd.
 ## Licensing
-
+tbd.
 ## Copyright 
+tbd.
