@@ -8,7 +8,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link, HashRouter
 } from "react-router-dom";
 import {Lobby} from "./pages/Lobby";
 import {HomePage} from "./pages/HomePage";
@@ -22,7 +22,7 @@ function App() {
     return (
         <Provider store={store}>
             <div className="App">
-                <Router>
+                <HashRouter>
                     <Route exact path="/">
                         <PageHeader
                             style={{
@@ -48,7 +48,7 @@ function App() {
                             <Lobby/>
                         </>
                     }}/>
-                </Router>
+                </HashRouter>
             </div>
         </Provider>
     );
